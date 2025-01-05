@@ -1,5 +1,8 @@
 import os
-from src.train import train_model
+import sys
+sys.path.append('src')  # Add the src directory to the Python path
+
+from train import train_model
 
 def test_model_training():
     train_model()
