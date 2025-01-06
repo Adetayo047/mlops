@@ -20,8 +20,7 @@ def train_model():
     model.fit(X, y)
 
     # Save the model
-    os.makedirs('../models', exist_ok=True)
-    dump(model, '../models/linear_model.joblib')
+    dump(model, 'linear_model.joblib')
     print("Model trained and saved!")
 
 if __name__ == "__main__":
